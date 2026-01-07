@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to know me!</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Lexend:wght@100..900&display=swap');
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: "IM Fell DW Pica", serif;
+        }
+        
+        body {
+            /* background-color: #699bc7; */
+            background-color: #bababa;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding-top: 3rem;
+            /* background-color: white; */
+        }
+        
+        .container > * {
+            margin: 1rem;
+        }
+
+        .pfp-img {
+            border-radius: 50%;
+            width: 12rem;
+            height: 12rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .linksContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .link {
+            text-decoration: none;
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            border: .2rem solid #353535;
+            background-color:#7f7f7f;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            height: 3rem;
+            width: 80%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .link:hover {
+            cursor: pointer;
+            background-color: #353535;
+            color: white;
+        }
+
+
+        @media only screen and (max-width: 600px){
+            .container {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+
+    <div class="container">
+        <div class="profile">
+            <img class="pfp-img" src="../resources/IMG_6111.jpg">
+        </div>
+        <p style="font-size: 2rem;">James Lian</p>
+        <div class="linksContainer">
+            <a class="link" href="https://www.instagram.com/jaaaameslian/">
+                Instagram
+            </a>
+            <a class="link" href="https://www.example.com/">
+                Second link so I know this format is working!
+            </a>
+        </div>
+    </div>
+</body>
+</html>
